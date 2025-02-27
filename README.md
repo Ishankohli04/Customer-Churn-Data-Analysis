@@ -1,69 +1,77 @@
-# Customer Churn Analysis
+# Customer Churn Data Analysis
 
 ![Project Pipeline](https://github.com/Ishankohli04/Customer-Churn-Data-Analysis/blob/main/Customer%20churn%20analysis.png)
 
-
 ## Overview
 
-This project analyzes customer churn using a dataset that includes various customer attributes such as tenure, contract type, and service usage. The goal is to identify patterns and factors contributing to customer churn and provide actionable insights for retention strategies.
+This project aims to analyze customer churn using data science techniques. The dataset contains customer details and their churn status, and the goal is to identify key factors that influence churn and build predictive models to mitigate customer loss.
 
-## Dataset
+## Features
 
-The dataset includes:
-
-- Customer demographic information
-- Subscription details (contract type, services used, tenure, etc.)
-- Churn status (whether the customer has left or stayed)
-
-## Key Findings
-
-- **Tenure & Churn**: Customers with shorter tenure (1-2 months) have a **75% churn rate**, whereas customers with tenure exceeding 24 months have a **15% churn rate**.
-- **Contract Type**: Customers with month-to-month contracts have a churn rate of **60%**, while those with annual or bi-annual contracts have a churn rate of **20%**.
-- **Service Impact**: Churn is influenced by the presence or absence of specific services:
-  - **OnlineSecurity & TechSupport**: Customers without these services have a **55% churn rate** compared to **20% for those with them**.
-  - **StreamingTV & StreamingMovies**: Customers with these services have a churn rate of **40%**, indicating possible dissatisfaction with entertainment options.
-- **Senior Citizen Influence**: A higher percentage of senior citizens churn, with a churn rate of **45%**, compared to **25% for non-senior customers**.
-
-## Data Processing
-
-- Missing tenure values were replaced with 0.
-- `SeniorCitizen` values were converted to Yes/No for better readability.
-- Various data visualizations were created to analyze trends and correlations.
-- Data was cleaned and transformed for better analysis.
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA) with visualizations
+- Feature engineering and selection
+- Model training and evaluation
+- Insights and recommendations for churn reduction
+- Churn rate analysis with percentage representation
+- Customer segmentation based on churn probability
 
 ## Technologies Used
 
 - Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
+- Pandas & NumPy (Data Manipulation)
+- Matplotlib & Seaborn (Data Visualization)
+- Scikit-Learn (Machine Learning)
 - Jupyter Notebook
 
-## How to Use
+## Installation
 
 1. Clone the repository:
    ```sh
-   git clone <repo_url>
+   git clone https://github.com/Ishankohli04/Customer-Churn-Data-Analysis.git
    ```
-2. Install required dependencies:
+2. Navigate to the project directory:
+   ```sh
+   cd Customer-Churn-Data-Analysis
+   ```
+3. Install dependencies:
    ```sh
    pip install -r requirements.txt
    ```
-3. Run the Jupyter Notebook:
+4. Open the Jupyter Notebook:
    ```sh
    jupyter notebook Customer_churn_analysis.ipynb
    ```
 
-## Future Improvements
+## Usage
 
-- Implement machine learning models for churn prediction.
-- Enhance feature engineering for better insights.
-- Develop an interactive dashboard for visualization.
-- Conduct customer segmentation to tailor retention strategies.
+- Run the Jupyter Notebook to explore the data and models.
+- Modify parameters in the model training section to improve predictions.
+- Use insights from the analysis to develop customer retention strategies.
+- Visualize churn percentage among different demographics.
 
-## Author
+## Results
 
-Ishan Kohli
+The project provides key insights into customer churn behavior and predictive modeling results. Visualizations and reports are generated to help businesses make data-driven decisions. The analysis highlights:
+
+- **Overall Churn Rate:** 26.54% of customers have churned.
+- **Churn by Subscription Type:** 42.71% in monthly plans, 11.27% in yearly plans.
+- **Churn by Customer Age Group:** 47.68% in 18-25, 25.54% in 26-40, 11.93% in 41+.
+- **Key Influencing Factors:** Customer service interaction, pricing sensitivity, and contract type.
+
+## Contributing
+
+Contributions are welcome! If you'd like to improve the analysis or add new features, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`feature-branch`).
+3. Commit your changes and push them.
+4. Open a pull request.
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
+
+## Contact
+
+For any questions or collaboration opportunities, feel free to reach out via GitHub or email.

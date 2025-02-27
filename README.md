@@ -1,9 +1,6 @@
 # Customer Churn Analysis
 
-(https://github.com/Ishankohli04/Customer-Churn-Data-Analysis/blob/main/Customer%20churn%20analysis.png)
-
-
-
+![Project Pipeline](https://github.com/Ishankohli04/Customer-Churn-Data-Analysis/blob/main/Customer%20churn%20analysis.png)
 
 
 ## Overview
